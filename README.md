@@ -1,32 +1,91 @@
-# Create and manage infrastructure using Terraform and automate the deployment process with GitHub Actions.
+# Infrastructure Automation with Terraform and GitHub Actions
 
-![Project Flow](https://github.com/gauri17-pro/vpc-terraform-github-actions/assets/60473255/0e09102c-2949-4576-be43-39900a2c1a95)
- 
- ## Introduction 
- This GitHub project provides a comprehensive guide and a set of resources to create and manage infrastructure using Terraform and automate the deployment process using GitHub Actions. 
- 
- Terraform is an open-source infrastructure as code (IaC) tool that allows you to define and provision infrastructure using a declarative configuration language. 
- 
- Whereas GitHub Actions is a powerful automation and CI/CD platform provided by GitHub.
+## Introduction
+This repository provides a comprehensive guide and a set of resources to create and manage infrastructure using **Terraform** and automate the deployment process with **GitHub Actions**.
 
- 
+**Terraform** is an open-source Infrastructure as Code (IaC) tool that allows you to define and provision infrastructure using a declarative configuration language.
+
+**GitHub Actions** is a powerful automation and CI/CD platform provided by GitHub that enables automated workflows, including infrastructure provisioning and deployment.
+
+## Project Flow
 By combining Terraform and GitHub Actions, you can:
 
-**Define Infrastructure as Code**: Define your infrastructure components, such as virtual machines, databases, and networks, in a Terraform configuration file.
+✅ **Define Infrastructure as Code**: Specify infrastructure components like virtual machines, databases, and networks in a Terraform configuration file.
 
-**Automate Deployment**: Set up GitHub Actions workflows to automatically deploy your infrastructure whenever there are changes to your Terraform configuration.
+✅ **Automate Deployment**: Use GitHub Actions workflows to automatically deploy infrastructure changes whenever the Terraform configuration is updated.
 
-**Version Control**: Keep your infrastructure code version-controlled and easily collaborate with your team.
+✅ **Version Control**: Maintain your infrastructure code under version control to collaborate efficiently with your team.
 
-**Infrastructure as Code Best Practices**: Follow best practices for infrastructure as code, including versioning, code review, and documentation.
+✅ **Follow Best Practices**: Adhere to infrastructure as code best practices, including versioning, code reviews, and documentation.
 
-This project serves as a starting point for your infrastructure automation journey, providing a basic structure and guidelines to build upon.
+This project serves as a **starting point** for automating infrastructure deployment and management, offering a structured approach to Infrastructure as Code (IaC).
 
-## Prerequisites
-Before you begin, ensure you have the following prerequisites:
+![CI-CD with Terraform and GitHub Actions](72-image-1.webp)
 
-* GitHub Account
-* Terraform installed on your local machine.
-* Access to a cloud provider account (e.g., AWS, Azure, Google Cloud) and necessary API credentials.
+---
 
+## Getting Started
 
+### Prerequisites
+Before you begin, ensure you have the following installed:
+- [Terraform](https://developer.hashicorp.com/terraform/downloads)
+- [GitHub CLI](https://cli.github.com/)
+- [AWS CLI / Azure CLI / GCP SDK](https://aws.amazon.com/cli/) (depending on your cloud provider)
+
+### Setup
+1. **Clone the Repository**
+   ```bash
+   git clone https://github.com/your-repo-name.git
+   cd your-repo-name
+   ```
+2. **Initialize Terraform**
+   ```bash
+   terraform init
+   ```
+3. **Plan Infrastructure Changes**
+   ```bash
+   terraform plan
+   ```
+4. **Apply Changes**
+   ```bash
+   terraform apply
+   ```
+5. **Destroy Infrastructure (if needed)**
+   ```bash
+   terraform destroy
+   ```
+
+---
+
+## GitHub Actions Workflow
+This repository includes a GitHub Actions workflow to automate Terraform deployment. The workflow:
+- Runs on every push to the `main` branch.
+- Validates Terraform code.
+- Applies changes automatically after approval.
+
+### Workflow Configuration
+You can find the workflow in `.github/workflows/terraform.yml`. Modify it based on your requirements.
+
+### Running the Workflow
+1. Commit your Terraform files.
+2. Push changes to GitHub.
+3. The workflow will trigger automatically.
+
+---
+
+## Best Practices
+- Use **remote state management** (e.g., S3 + DynamoDB for AWS, Azure Storage for Azure) to store Terraform state securely.
+- Implement **GitHub Actions secrets** to manage credentials securely.
+- Use **Terraform modules** to structure your infrastructure code.
+- Follow **code reviews and approvals** before applying changes in production.
+
+---
+
+## Contributing
+Contributions are welcome! Feel free to open an issue or submit a pull request.
+
+## License
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+For any queries, reach out via [GitHub Issues](https://github.com/your-repo-name/issues).
