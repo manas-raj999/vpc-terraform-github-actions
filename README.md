@@ -20,7 +20,8 @@ By combining Terraform and GitHub Actions, you can:
 
 This project serves as a **starting point** for automating infrastructure deployment and management, offering a structured approach to Infrastructure as Code (IaC).
 
-![CI-CD with Terraform and GitHub Actions](72-image-1.webp)
+![CI-CD with Terraform and GitHub Actions](![1_68kTSfH9Hto3OrJAbpjCmw](https://github.com/user-attachments/assets/f17f8fd2-48aa-4e02-9e84-50909b6ec124))
+
 
 ---
 
