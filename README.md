@@ -1,6 +1,7 @@
 # Infrastructure Automation with Terraform and GitHub Actions
 
-![CI-CD with Terraform and GitHub Actions](![1_68kTSfH9Hto3OrJAbpjCmw](https://github.com/user-attachments/assets/f17f8fd2-48aa-4e02-9e84-50909b6ec124))
+![CI-CD with Terraform and GitHub Actions]
+(![alt text](https://github.com/user-attachments/assets/f17f8fd2-48aa-4e02-9e84-50909b6ec124))
 
 ## Introduction
 This repository provides a comprehensive guide and a set of resources to create and manage infrastructure using **Terraform** and automate the deployment process with **GitHub Actions**.
