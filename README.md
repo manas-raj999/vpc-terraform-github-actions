@@ -37,8 +37,8 @@ Before you begin, ensure you have the following installed:
 ### Setup
 1. **Clone the Repository**
    ```bash
-   git clone https://github.com/your-repo-name.git
-   cd your-repo-name
+   git clone https://github.com/manas-raj999.git
+   cd manas-raj999
    ```
 2. **Initialize Terraform**
    ```bash
